@@ -7,7 +7,7 @@ jest.mock('../../utility/api.js');
 
 describe('Test PearsonUsers component', () => {
 
-  it("Render <PearsonUsers/>", async () => {
+  it("Render <PearsonUsers/>", () => {
     const wrapper = shallow( <PearsonUsers /> );
    expect(wrapper).toMatchSnapshot();
     const h1 = wrapper.find("h1");
