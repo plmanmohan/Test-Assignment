@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Profile from "./Profile";
-import { removeUser, removeDuplicateUsers } from "../utility/user-functions";
-import "./component.css";
-import api from "../utility/api";
+import Profile from "../Profile/Profile";
+import { removeUser, removeDuplicateUsers } from "../../utility/user-functions";
+import "./style.css";
+import api from "../../utility/api";
 
 export default class PearsonUsers extends Component {
   /**

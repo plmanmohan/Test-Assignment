@@ -1,5 +1,5 @@
-import Profile from "../Profile";
-import PearsonUsers from "../PearsonUsers";
+import Profile from "../Profile/Profile";
+import PearsonUsers from "../PearsonUsers/PearsonUsers";
 import { removeUser, removeDuplicateUsers } from "../../utility/user-functions";
 
 
