@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import PearsonUsers from './components/PearsonUsers/PearsonUsers';
+import { PearsonUsers } from './components/PearsonUsers';
 
 class App extends Component {
   render() {

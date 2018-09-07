@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Profile from "../Profile/Profile";
+import { Profile } from "../Profile";
 import { removeUser, removeDuplicateUsers } from "../../utility/user-functions";
 import "./style.css";
 import api from "../../utility/api";
 
-export default class PearsonUsers extends Component {
+export class PearsonUsers extends Component {
   /**
    * Here initial state is defined
    * @param {*}

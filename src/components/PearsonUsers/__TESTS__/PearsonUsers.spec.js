@@ -1,11 +1,15 @@
-import Profile from "../Profile/Profile";
-import PearsonUsers from "../PearsonUsers/PearsonUsers";
-import { removeUser, removeDuplicateUsers } from "../../utility/user-functions";
+import { Profile } from "../../Profile";
+import { PearsonUsers } from "../PearsonUsers";
+import { removeUser, removeDuplicateUsers } from "../../../utility/user-functions";
 
 
-jest.mock('../../utility/api.js');
+jest.mock('../../../utility/api.js');
 
 describe('Test PearsonUsers component', () => {
+
+  it('renders without crashing', () => {
+    shallow(<PearsonUsers />);
+  });
 
   it("Render <PearsonUsers/>", () => {
     const wrapper = shallow( <PearsonUsers /> );
