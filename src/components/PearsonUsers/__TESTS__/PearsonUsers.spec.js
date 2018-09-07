@@ -96,5 +96,11 @@ describe('Test PearsonUsers component', () => {
     const p = wrapper.find("p");
     expect(p.text()).toEqual("George Edwards");
   });
+
+  it("Render initial state data", () => {
+    const wrapper = shallow(<PearsonUsers />);
+    const finalState = wrapper.instance().displayUsers();
+    expect(finalState.length).toEqual(3);
+  });
  });
 
