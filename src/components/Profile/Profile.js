@@ -1,22 +1,23 @@
-import React from "react";
-import PropTypes from "prop-types";
-import "./style.css";
+import React from 'react';
 
-export const Profile = props => (
+import './style.css';
+
+export const Profile = ({ user, onDelete}) => (
   <div>
     <div className="container">
-        <img className="avatar-img" src={props.user.avatar} alt={props.user.first_name} />
-        <p className="userName">{props.user.first_name} {props.user.last_name}</p>
-        <button className="delete" onClick={() => props.onDelete(props.user.id)}>Delete</button>
+      <img
+        className="avatar-img"
+        src={user.avatar}
+        alt={user.first_name}
+      />
+      <p className="userName">
+        {user.first_name}
+        {' '}
+        {user.last_name}
+      </p>
+      <button type="button" className="delete" onClick={() => onDelete(user.id)}>
+        Delete
+      </button>
     </div>
-
-    
   </div>
 );
-
-Profile.propTypes = {
-  user: PropTypes.object.isRequired,
-  onDelete: PropTypes.func.isRequired
-};
-
-
